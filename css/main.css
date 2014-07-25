@@ -4,6 +4,11 @@ body {
 	font-size: 1.4em;
 	line-height: 1.6em;
 }
+body > section {
+	clear: both;
+	padding: 50px 0;
+}
+
 h1, h2, h3, h4 {
 	font-family: 'Roboto Condensed', sans-serif;
 }
@@ -12,9 +17,6 @@ h1 {
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: 2.4em;
-}
-.inverso h1 {
-	color:#ffffff;
 }
 h2 {
 	color: #0c243d;
@@ -32,13 +34,6 @@ h2.parallax {
 	-webkit-text-shadow: 0px 7px 8px black;
 	-moz-text-shadow: 0px 7px 8px black;
 }
-.azulBG {
-	background-color: #123156;
-}
-.grisBG {
-	background-color: #f5f5f5;
-}
-
 .separador {
 	width: 40px;
 	height:4px;
@@ -47,17 +42,16 @@ h2.parallax {
 	background-color: #0c243d;
 	margin-bottom: 30px;
 }
-.inverso .separador {
-	width: 40px;
-	height:4px;
-	display: block;
-	margin:0 auto;
-	background-color: #ffffff;
-	margin-bottom: 30px;
+
+/** FONDOS DIV **/
+.azulBG {
+	background-color: #123156;
 }
-.inverso p {
-	color:#ffffff;
+.grisBG {
+	background-color: #f5f5f5;
 }
+
+
 
 /* MENU */
 
@@ -68,19 +62,6 @@ h2.parallax {
 	background-image: none;
 	min-height: 90px;
 	padding-top:20px;
-}
-
-
-.normal {
-	transition: 1s all ease;
-}
-
-.efecto{
-	background-color: #123156;
-	transition: 1s all ease;
-	min-height: 30px;
-	box-shadow: 0 0 10px black;
-	padding-top: 0;
 }
 
 .nav>li>a {
@@ -94,12 +75,22 @@ h2.parallax {
 	background-color: transparent;
 }
 
-body > section {
-	clear: both;
-	padding: 50px 0;
+/* EFECTOS MENU */
+
+.normal {
+	transition: 1s all ease;
+}
+
+.efecto{
+	background-color: #123156;
+	transition: 1s all ease;
+	min-height: 30px;
+	box-shadow: 0 0 10px black;
+	padding-top: 0;
 }
 
 
+/* #PRINCIPAL */
 section#principal {
 	min-height: 700px;
 	padding-top: 100px;
@@ -118,6 +109,8 @@ section#principal img {
 	margin:0 auto;
 }
 
+
+/* #APP */
 section#app img {
 	margin-bottom: 20px;
 }
@@ -134,6 +127,8 @@ section#app .social i {
 	color:#ffffff;
 }
 
+
+/* #CARACTERISTICAS */
 section#caracteristicas p {
 	font-size: .9em;
 	color:#858585;
@@ -156,6 +151,8 @@ section#caracteristicas .icono i {
 	color:#ffffff;
 }
 
+
+/* PANTALLAS */
 div.modal-body{
 	text-align: center;
 }	
@@ -163,6 +160,8 @@ div.modal-body img {
 	max-height: 90%;
 }	
 
+
+/* #PARALLAX */
 section#parallax {
 	height: 500px;
 	background-image: url(../img/ipadApp.jpg);
@@ -171,6 +170,7 @@ section#parallax {
 	background-size: cover;
 }
 
+/* #DESCARGAR */
 
 section#descargar div.contenidoDescarga{
 	height: 700px;
@@ -223,6 +223,8 @@ section#descargar .plataformas > div span {
 	font-weight: bold;
 }
 
+
+/* FORMULARIO */
 section#soporte p {
 	font-size: 2em;
 }
